@@ -41,10 +41,10 @@ export default function TextForm(props) {
                 <textarea className="form-control" style={{backgroundColor: props.mode === 'dark' ? 'grey':'white', color: props.mode === 'light' ? '#042743':'white' }} onChange={handleOnChange} id="textBox" value={text} rows="8"></textarea>
                 <label htmlFor="form-control" >Text is changed {count} Number of times </label>
             </div>
-            <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to UPPERCASE</button>
-            <button className="btn btn-primary mx-2" onClick={handleLowClick}>Convert to lowercase</button>
-            <button className="btn btn-primary mx-2" onClick={handleCopyClick}>Copy to Clipboard</button>
-            <button className="btn btn-primary mx-2" onClick={handlePasteClick}>Paste from Clipboard</button>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>Convert to UPPERCASE</button>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleLowClick}>Convert to lowercase</button>
+            <button className="btn btn-primary mx-2 my-2" onClick={handleCopyClick}>Copy to Clipboard</button>
+            <button className="btn btn-primary mx-2 my-2" onClick={handlePasteClick}>Paste from Clipboard</button>
         </div>
         <div className="container my-3" style={{color: props.mode === 'light' ? '#042743':'white' }}>
             <h2>Your text summary</h2>
